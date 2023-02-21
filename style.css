@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: #FFC600;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.dados{
+    border: solid 4px #FFC600;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+form input, form button{
+    margin-bottom: 20px;
+}
+
+form label{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -195px;
+    color: #FFC600;
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: 0.2s cubic-bezier(1, -0.15, 0, 0.9);
+}
+input{
+    width: 200px;
+    height: 30px;
+    border: solid 2px #FFC600;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px;
+    color: #FFC600;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+input:focus{
+    background-color: #FFC600;
+    color: white;
+}
+input:focus ~ label{
+    margin-top: -15px;
+    margin-left: -195px;
+    transition: 0.2s cubic-bezier(1, -0.15, 0, 0.9);
+    font-size: 1em;
+}
+input:valid ~ label{
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -195px;
+}
+
+button{
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #FFC600;
+    border: none;
+    border-radius: 10px;
+}
+
+.imc_resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.imc_resultado input{
+    text-align: center;
+    height: 60px;
+    width: 111px;
+    background-color: #FFC600;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 23px;
+}
+.imc_resultado span{
+    background-color: white;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#resultado{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+#resultado p{
+    font-weight: bold;
+}
